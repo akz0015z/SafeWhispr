@@ -21,27 +21,40 @@ To run **SafeWhispr** with full functionality (Login, Signup, Chat Messaging), y
 
 1. Create a Firebase Project
 - Visit: [https://console.firebase.google.com](https://console.firebase.google.com)
-- Click **Add Project**, give it a name (e.g., `SafeWhisprApp`), and follow the setup steps
+- Click **Add Project**, must give it the name `safewhispr`), and follow the setup steps
 
 2. Enable Firebase Services
 In your project:
-Go to **Firestore Database**  
+Click Build on the Left Side Menu and Go to **Firestore Database**  
 Click **Create Database**  
-Start in test mode
-Go to **Authentication**  
-Click **Sign-in method**  
+Leave the databsase id as (default) and the Location
+Then Click Start in test mode
+Then Click Build again and Go to **Authentication**  
+Click Get Started then **Sign-in Providers Under Native Providers**  
 Enable **Email/Password**
 
 3. Generate Your Firebase Admin SDK Key
 In the Firebase Console:  
-Click ⚙️ **Project settings**  
+Beside Project Overview on Top Left Click ⚙️ then **Project settings**  
 Go to the **Service Accounts** tab  
 Click **Generate new private key**  
 A `.json` file will download.
 
 4. Add the JSON Key to the App
-Rename the downloaded file to: **firebase-service-account.json**
-Place it here in your project directory: **src/main/resources/firebase-service-account.json** under a default package
+Rename the downloaded file to: **firebase-service-account** because **.json is already the source file**
+Drag it from file explorer onto: **src/main/resources/** or copy and paste it to it's directory **src/main/resources/firebase-service-account.json**
+
+5. 📂 Add Your Service Account Key to Project
+Place the downloaded firebase-service-account.json inside:
+
+Open this file in your IDE:
+
+**src/main/java/com/safe/whispr/safewhispr/FirebaseInitializer.java**
+
+On Line 47, replace the **.setProjectId("your_project_id_here")** with your Firebase Project ID: eg. `safwhisper-5342g`
+
+You can find your Project ID in Firebase:
+Beside Project Overview on Top Left Click ⚙️ then **Project settings**> General > Project ID    
 
 
 # 🗂 Directory Structure
