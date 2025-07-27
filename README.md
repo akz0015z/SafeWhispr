@@ -27,11 +27,11 @@ To run **SafeWhispr** with full functionality (Login, Signup, Chat Messaging), y
 In your project:
 Click Build on the Left Side Menu and Go to **Firestore Database**  
 Click **Create Database**  
-Leave the databsase id as (default) and the Location
+Leave the databsase id as `(default)` and the Location
 Then Click Start in test mode
 Then Click Build again and Go to **Authentication**  
 Click Get Started then **Sign-in Providers Under Native Providers**  
-Enable **Email/Password**
+Enable `Email/Password`
 
 3. Generate Your Firebase Admin SDK Key
 In the Firebase Console:  
@@ -44,22 +44,21 @@ A `.json` file will download.
 Rename the downloaded file to: **firebase-service-account** because **.json is already the source file**
 Drag it from file explorer onto: **src/main/resources/** or copy and paste it to it's directory **src/main/resources/firebase-service-account.json**
 
-5. 📂 Add Your Service Account Key to Project
-Place the downloaded firebase-service-account.json inside:
+5. 📂 How to add your Project ID
 
-Open this file in your IDE:
-
-**src/main/java/com/safe/whispr/safewhispr/FirebaseInitializer.java**
-
-On Line 47, replace the **.setProjectId("your_project_id_here")** with your Firebase Project ID: eg. `safwhisper-5342g`
-
+Open this file in your IDE: `src/main/java/com/safe/whispr/safewhispr/FirebaseInitializer.java`
+On Line 47, add your project **ID** eg `safwhisper-5342g` where it says `.setProjectId("your_project_id_here")` 
 You can find your Project ID in Firebase:
-Beside Project Overview on Top Left Click ⚙️ then **Project settings**> General > Project ID    
+Beside Project Overview on Top Left Click ⚙️ then **Project settings**> General >` Project ID ` 
 
 
+---
+# 💬 Notes
+The code uses proper branching (`main`, `development`, `feature/*`) for versioning.
+All features listed in the final report have been implemented and tested.
+Message content is encrypted using AES before being stored in Firestore.
 
-
-
+---
 
 # 🗂 Directory Structure
 
@@ -80,17 +79,5 @@ src/
 │ └── images/
 │ └── clouds.png
 
-
-
-
-
-
----
-# 💬 Notes
-The code uses proper branching (`main`, `development`, `feature/*`) for versioning.
-All features listed in the final report have been implemented and tested.
-Message content is encrypted using AES before being stored in Firestore.
-
----
 
 **GitHub:** [https://github.com/akz0015z/SafeWhispr](https://github.com/akz0015z/SafeWhispr)
