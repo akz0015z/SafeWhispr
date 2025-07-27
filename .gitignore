@@ -1,0 +1,17 @@
+# Ignore the Firebase service account key
+src/main/resources/firebase-service-account.json
+
+# Ignore compiled Java classes
+*.class
+
+# Ignore IDE settings (NetBeans, IntelliJ, VS Code, etc.)
+nbproject/private/
+.vscode/
+.idea/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore logs
+*.log
