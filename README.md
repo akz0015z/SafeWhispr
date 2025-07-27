@@ -21,7 +21,7 @@ To run **SafeWhispr** with full functionality (Login, Signup, Chat Messaging), y
 
 1. Create a Firebase Project
 - Visit: [https://console.firebase.google.com](https://console.firebase.google.com)
-- Click **Add Project**, must give it the name `safewhispr`), and follow the setup steps
+- Click **Add Project**, must give it the name `safewhispr` and follow the setup steps
 
 2. Enable Firebase Services
 In your project:
@@ -57,6 +57,10 @@ You can find your Project ID in Firebase:
 Beside Project Overview on Top Left Click ⚙️ then **Project settings**> General > Project ID    
 
 
+
+
+
+
 # 🗂 Directory Structure
 
 src/
@@ -75,6 +79,10 @@ src/
 │ │ ├── Login.fxml / Signup.fxml / Choice.fxml
 │ └── images/
 │ └── clouds.png
+
+
+
+
 
 
 ---
