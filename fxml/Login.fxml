@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.safe.whispr.safewhispr.LoginController"
+           prefWidth="600" prefHeight="400"
+           style="-fx-background-color: #87CEEB;">
+
+    <!-- Background image -->
+    <ImageView fitWidth="600" fitHeight="400" preserveRatio="false"
+               StackPane.alignment="CENTER"
+               viewOrder="10">
+        <image>
+            <Image url="@images/clouds.png" />
+        </image>
+    </ImageView>
+
+    <!-- Centered login box -->
+    <VBox alignment="CENTER" spacing="15"
+          maxWidth="400" maxHeight="300"
+          style="-fx-background-color: rgba(255, 255, 255, 0.85); -fx-background-radius: 20; -fx-padding: 25; -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0.1, 0, 3);"
+          StackPane.alignment="CENTER">
+
+        <Label text="☁ SafeWhispr Login ☁"
+               style="-fx-font-size: 22px; -fx-font-weight: bold; -fx-text-fill: #333;" />
+
+        <TextField fx:id="usernameField"
+                   promptText="Username"
+                   style="-fx-background-radius: 10; -fx-padding: 10;" />
+
+        <PasswordField fx:id="passwordField"
+                       promptText="Password"
+                       style="-fx-background-radius: 10; -fx-padding: 10;" />
+
+        <Button text="Login" onAction="#handleLogin"
+                style="-fx-background-color: #1e90ff; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 10;"
+                minWidth="200" />
+
+        <Hyperlink text="Sign Up" onAction="#handleSignUp"
+                   style="-fx-text-fill: #1e90ff; -fx-font-weight: bold;" />
+    </VBox>
+</StackPane>
