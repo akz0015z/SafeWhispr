@@ -15,7 +15,7 @@ Clean, styled JavaFX UI
 
 ---
 
-🔐# Firebase & Firestore Configuration
+# 🔐 Firebase & Firestore Configuration
 
 To run **SafeWhispr** with full functionality (Login, Signup, Chat Messaging), you must connect it to a Firebase project. Here's how:
 
@@ -44,7 +44,7 @@ Rename the downloaded file to: **firebase-service-account.json**
 Place it here in your project directory: **src/main/resources/firebase-service-account.json** under a default package
 
 
-🗂 # Directory Structure
+# 🗂 Directory Structure
 
 src/
 ├── com.safe.whispr.safewhispr/
@@ -65,7 +65,7 @@ src/
 
 
 ---
-💬 # Notes
+# 💬 Notes
 The code uses proper branching (`main`, `development`, `feature/*`) for versioning.
 All features listed in the final report have been implemented and tested.
 Message content is encrypted using AES before being stored in Firestore.
